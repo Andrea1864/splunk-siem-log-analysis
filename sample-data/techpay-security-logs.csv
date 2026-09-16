@@ -1,1 +1,31 @@
-
+timestamp,event_type,user,source_ip,destination,action,status,country
+2026-08-10 08:23:11,login,john.smith,192.168.1.10,techpay-portal,authenticate,success,ES
+2026-08-10 08:45:33,login,maria.garcia,192.168.1.15,techpay-portal,authenticate,success,ES
+2026-08-10 09:12:05,login,unknown_user,45.33.32.156,techpay-portal,authenticate,failed,RU
+2026-08-10 09:12:08,login,unknown_user,45.33.32.156,techpay-portal,authenticate,failed,RU
+2026-08-10 09:12:11,login,unknown_user,45.33.32.156,techpay-portal,authenticate,failed,RU
+2026-08-10 09:12:14,login,unknown_user,45.33.32.156,techpay-portal,authenticate,failed,RU
+2026-08-10 09:12:17,login,unknown_user,45.33.32.156,techpay-portal,authenticate,failed,RU
+2026-08-10 09:12:20,login,unknown_user,45.33.32.156,techpay-portal,authenticate,failed,RU
+2026-08-10 09:15:44,login,carlos.lopez,192.168.1.22,techpay-portal,authenticate,success,ES
+2026-08-10 02:33:15,login,ana.martinez,185.220.101.45,techpay-portal,authenticate,success,CN
+2026-08-10 02:33:45,data_access,ana.martinez,185.220.101.45,customer-database,read,success,CN
+2026-08-10 02:34:12,data_access,ana.martinez,185.220.101.45,customer-database,read,success,CN
+2026-08-10 02:34:55,data_export,ana.martinez,185.220.101.45,customer-database,export,success,CN
+2026-08-10 10:15:22,payment,john.smith,192.168.1.10,payment-gateway,process,success,ES
+2026-08-10 10:16:33,payment,carlos.lopez,192.168.1.22,payment-gateway,process,success,ES
+2026-08-10 11:22:44,login,unknown_user,103.21.244.0,techpay-portal,authenticate,failed,CN
+2026-08-10 11:22:46,login,unknown_user,103.21.244.0,techpay-portal,authenticate,failed,CN
+2026-08-10 11:22:48,login,unknown_user,103.21.244.0,techpay-portal,authenticate,failed,CN
+2026-08-10 11:22:50,login,unknown_user,103.21.244.0,techpay-portal,authenticate,failed,CN
+2026-08-10 11:22:52,login,unknown_user,103.21.244.0,techpay-portal,authenticate,failed,CN
+2026-08-10 13:45:00,privilege_change,admin,192.168.1.1,entra-id,role_assign,success,ES
+2026-08-10 14:22:11,login,john.smith,192.168.1.10,techpay-portal,authenticate,success,ES
+2026-08-10 14:55:33,data_access,john.smith,192.168.1.10,security-dashboard,read,success,ES
+2026-08-10 15:30:00,login,unknown_user,91.108.4.0,techpay-portal,authenticate,failed,UA
+2026-08-10 15:30:02,login,unknown_user,91.108.4.0,techpay-portal,authenticate,failed,UA
+2026-08-10 15:30:04,login,unknown_user,91.108.4.0,techpay-portal,authenticate,failed,UA
+2026-08-10 23:15:22,login,maria.garcia,77.88.55.66,techpay-portal,authenticate,success,RU
+2026-08-10 23:16:00,data_access,maria.garcia,77.88.55.66,compliance-reports,read,success,RU
+2026-08-10 23:17:30,data_export,maria.garcia,77.88.55.66,compliance-reports,export,success,RU
+2026-08-10 23:18:00,data_access,maria.garcia,77.88.55.66,customer-database,read,success,RU
