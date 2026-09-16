@@ -1,1 +1,4 @@
-
+-- Detects data export events from unusual locations
+earliest=0 source="techpay-security-logs.csv" event_type="data_export"
+| table _time, user, source_ip, country, destination
+| sort _time
