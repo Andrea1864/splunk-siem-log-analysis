@@ -1,1 +1,5 @@
-
+-- Detects brute force attacks: more than 3 failed logins from same IP
+earliest=0 source="techpay-security-logs.csv" status="failed"
+| stats count by source_ip, country
+| where count > 3
+| sort -count
