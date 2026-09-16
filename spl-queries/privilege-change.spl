@@ -1,1 +1,3 @@
-
+-- Detects privilege escalation events
+earliest=0 source="techpay-security-logs.csv" event_type="privilege_change"
+| table _time, user, source_ip, country, action, destination
