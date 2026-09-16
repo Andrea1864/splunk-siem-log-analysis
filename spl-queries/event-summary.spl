@@ -1,1 +1,4 @@
-
+-- Executive summary of all security events
+earliest=0 source="techpay-security-logs.csv"
+| stats count by event_type, status, country
+| sort -count
