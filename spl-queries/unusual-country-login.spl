@@ -1,1 +1,5 @@
-
+-- Detects successful logins from countries outside Spain
+earliest=0 source="techpay-security-logs.csv" status="success"
+| where country!="ES"
+| table _time, user, source_ip, country, event_type, destination
+| sort _time
